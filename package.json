@@ -1,0 +1,23 @@
+{
+  "name": "rfg",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "RFG — 금융 도구를 카테고리별로 모아 제공하는 웹사이트",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "i18next": "^23.11.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^14.1.2",
+    "react-router-dom": "^6.24.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.4"
+  }
+}

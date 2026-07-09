@@ -60,3 +60,5 @@ docker compose up --build -d
 ## 문구(텍스트) 수정 방법
 
 화면 문구를 바꾸려면 컴포넌트가 아니라 `src/locales/ko.json`만 수정하면 됩니다. 새 도구를 추가할 때는 `src/data/catalog.js`에 항목을 등록하고, 대응하는 문구 키를 `ko.json`에 추가하세요.
+
+> ⚠️ **하드코딩 금지 규칙**: UI 문구는 반드시 `ko.json` 한 곳에서만 관리합니다. 자세한 규칙과 예시는 [`CLAUDE.md`](CLAUDE.md)를 참고하세요.

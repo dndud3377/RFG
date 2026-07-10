@@ -1,81 +1,50 @@
 {
   "app": {
     "name": "RFG",
-    "tagline": "SMART FINANCE TOOLKIT"
+    "tagline": "ENGINEERING TOOLKIT"
   },
   "nav": {
     "home": "홈",
     "tools": "도구",
-    "help": "도움말",
-    "cta": "시작하기"
+    "help": "도움말"
   },
   "home": {
     "hero": {
-      "kicker": "SMART FINANCE TOOLKIT",
-      "titleLead": "필요한 금융 도구를 ",
-      "titleAccent": "카테고리",
-      "titleTail": "에서 바로",
+      "kicker": "ENGINEERING TOOLKIT",
+      "titleLead": "필요한 업무 도구를 ",
+      "titleAccent": "검색",
+      "titleTail": "해서 바로 사용하세요",
       "subtitle": "계산 · 관리 · 분석 도구를 한 곳에 모았습니다."
     },
-    "sidebar": {
-      "title": "카테고리",
-      "all": "전체"
+    "search": {
+      "placeholder": "도구 이름으로 검색...",
+      "empty": "검색 결과가 없습니다."
     },
     "badge": {
       "ready": "바로 사용",
       "soon": "준비 중"
     }
   },
-  "categories": {
-    "calc": { "name": "계산 도구", "tag": "CALCULATORS" },
-    "manage": { "name": "자산 관리", "tag": "MANAGE" },
-    "insights": { "name": "분석 · 리포트", "tag": "INSIGHTS" }
-  },
   "tools": {
-    "loan": {
-      "name": "대출·이자 계산기",
-      "desc": "상환 방식별 월 납입금과 총 이자를 계산합니다.",
-      "icon": "🏦"
+    "ebeam": {
+      "name": "ebeam review",
+      "desc": "이빔 리뷰 결과를 확인하고 관리합니다.",
+      "icon": "🔬"
     },
-    "budget": {
-      "name": "예산·가계부",
-      "desc": "수입·지출을 기록하고 카테고리별로 분석합니다.",
-      "icon": "📊"
+    "numbering": {
+      "name": "채번",
+      "desc": "도면·문서 번호를 규칙에 따라 자동으로 부여합니다.",
+      "icon": "🔢"
     },
-    "fx": {
-      "name": "환율 변환",
-      "desc": "주요 통화 간 금액을 빠르게 변환합니다.",
-      "icon": "💱"
+    "rcc": {
+      "name": "RCC list",
+      "desc": "RCC 목록을 조회하고 관리합니다.",
+      "icon": "📋"
     },
-    "roi": {
-      "name": "투자 수익률",
-      "desc": "복리·ROI 시뮬레이션으로 미래 가치를 예측합니다.",
-      "icon": "📈"
-    },
-    "tax": {
-      "name": "세금 계산기",
-      "desc": "소득·부가세를 간이로 계산합니다.",
-      "icon": "🧾"
-    },
-    "goal": {
-      "name": "저축 목표",
-      "desc": "목표 금액까지의 진행률을 추적합니다.",
-      "icon": "🎯"
-    },
-    "subscription": {
-      "name": "구독 관리",
-      "desc": "정기 결제를 한눈에 정리합니다.",
-      "icon": "💳"
-    },
-    "report": {
-      "name": "지출 리포트",
-      "desc": "월별 소비 추이를 시각화합니다.",
-      "icon": "📉"
-    },
-    "alert": {
-      "name": "알림·예측",
-      "desc": "과지출을 예측하고 알림을 제공합니다.",
-      "icon": "🔔"
+    "layerConvert": {
+      "name": "Layer Information Convert",
+      "desc": "레이어 정보를 원하는 형식으로 변환합니다.",
+      "icon": "🗂️"
     }
   },
   "common": {
@@ -89,85 +58,8 @@
     "comingSoonTitle": "준비 중인 도구입니다",
     "comingSoonDesc": "이 도구는 아직 준비 중이에요. 곧 만나보실 수 있습니다."
   },
-  "loan": {
-    "title": "대출·이자 계산기",
-    "subtitle": "대출 원금과 이자율, 기간, 상환 방식을 입력하면 월 납입금과 총 이자를 계산합니다.",
-    "form": {
-      "principal": "대출 원금",
-      "principalPlaceholder": "예: 30000000",
-      "annualRate": "연 이자율",
-      "annualRatePlaceholder": "예: 4.5",
-      "termYears": "대출 기간",
-      "method": "상환 방식",
-      "methodEqualPayment": "원리금 균등",
-      "methodEqualPrincipal": "원금 균등",
-      "methodBullet": "만기 일시",
-      "methodEqualPaymentHint": "매달 같은 금액을 상환합니다.",
-      "methodEqualPrincipalHint": "매달 원금은 같고 이자는 점점 줄어듭니다.",
-      "methodBulletHint": "매달 이자만 내고 만기에 원금을 한 번에 상환합니다."
-    },
-    "result": {
-      "title": "계산 결과",
-      "monthlyPayment": "월 납입금",
-      "firstMonthPayment": "첫 달 납입금",
-      "lastMonthPayment": "마지막 달 납입금",
-      "totalInterest": "총 이자",
-      "totalPayment": "총 상환액",
-      "note": "실제 대출 조건에 따라 결과가 달라질 수 있는 참고용 계산입니다.",
-      "empty": "값을 입력하면 결과가 표시됩니다."
-    },
-    "error": {
-      "invalid": "원금·이자율·기간을 올바르게 입력해 주세요."
-    }
-  },
-  "budget": {
-    "title": "예산·가계부",
-    "subtitle": "수입과 지출을 기록하고 카테고리별로 어디에 돈을 쓰는지 확인하세요. 데이터는 이 브라우저에만 저장됩니다.",
-    "summary": {
-      "income": "총 수입",
-      "expense": "총 지출",
-      "balance": "잔액"
-    },
-    "form": {
-      "title": "내역 추가",
-      "type": "구분",
-      "typeIncome": "수입",
-      "typeExpense": "지출",
-      "category": "카테고리",
-      "amount": "금액",
-      "amountPlaceholder": "예: 12000",
-      "memo": "메모",
-      "memoPlaceholder": "선택 입력",
-      "add": "추가하기"
-    },
-    "categories": {
-      "salary": "급여",
-      "bonus": "부수입",
-      "food": "식비",
-      "transport": "교통",
-      "shopping": "쇼핑",
-      "housing": "주거·통신",
-      "leisure": "여가",
-      "health": "건강",
-      "etc": "기타"
-    },
-    "list": {
-      "title": "내역",
-      "empty": "아직 기록된 내역이 없습니다. 위에서 첫 내역을 추가해 보세요.",
-      "delete": "삭제",
-      "clearAll": "전체 삭제",
-      "confirmClear": "모든 내역을 삭제할까요?"
-    },
-    "breakdown": {
-      "title": "지출 카테고리 분석",
-      "empty": "지출 내역이 쌓이면 카테고리별 비중이 여기에 표시됩니다."
-    },
-    "error": {
-      "amount": "금액을 올바르게 입력해 주세요."
-    }
-  },
   "footer": {
-    "rights": "본 사이트의 계산 결과는 참고용이며 실제 금융 상품과 다를 수 있습니다.",
+    "rights": "제공되는 정보는 참고용이며 실제 결과와 다를 수 있습니다.",
     "copyright": "© 2026 RFG. All rights reserved."
   }
 }

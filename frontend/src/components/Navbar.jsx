@@ -16,7 +16,6 @@ export default function Navbar() {
           <a href="/#tools">{t('nav.tools')}</a>
           <a href="/#help">{t('nav.help')}</a>
         </nav>
-        <Link to="/tools/loan" className="navbar__cta">{t('nav.cta')}</Link>
       </div>
     </header>
   )

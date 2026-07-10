@@ -7,6 +7,8 @@ npm-debug.log*
 .DS_Store
 .vscode
 .idea
-Dockerfile
-docker-compose.yml
 README.md
+__pycache__
+*.pyc
+backend/db.sqlite3
+backend/staticfiles

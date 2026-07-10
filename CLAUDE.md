@@ -7,7 +7,7 @@
 ## 🔒 규칙 1 — UI 문구는 절대 하드코딩하지 않는다
 
 화면에 보이는 **모든 텍스트**(제목, 버튼, 라벨, 플레이스홀더, 에러 메시지, 안내 문구 등)는
-**오직 [`src/locales/ko.json`](src/locales/ko.json) 한 곳에서만** 관리한다.
+**오직 [`frontend/src/locales/ko.json`](frontend/src/locales/ko.json) 한 곳에서만** 관리한다.
 
 - 컴포넌트/페이지(`.jsx`) 안에 한국어(또는 어떤 언어든) 문자열을 직접 쓰지 않는다.
 - 문구를 바꾸거나 추가할 때는 **`ko.json`만** 수정한다.
@@ -57,7 +57,7 @@ function Example() {
 
 ## 🔒 규칙 2 — 카테고리/도구 메타데이터도 문구를 직접 담지 않는다
 
-카테고리와 도구 목록은 [`src/data/catalog.js`](src/data/catalog.js)에서 관리하되,
+카테고리와 도구 목록은 [`frontend/src/data/catalog.js`](frontend/src/data/catalog.js)에서 관리하되,
 **표시 문구는 담지 않고 i18n 키(`nameKey`, `descKey`, `iconKey`, `tagKey`)만 참조**한다.
 
 ```js
@@ -70,9 +70,9 @@ function Example() {
 
 ## ➕ 새 도구를 추가하는 방법
 
-1. `src/data/catalog.js`의 `tools` 배열에 항목 추가 (`id`, `category`, `path`, `ready`, `*Key` 지정)
-2. `src/locales/ko.json`의 `tools.<id>`에 `name` / `desc` / `icon` 문구 추가
-3. 실제 페이지가 필요하면 `src/pages/`에 컴포넌트를 만들고 `src/App.jsx`에 라우트 등록
+1. `frontend/src/data/catalog.js`의 `tools` 배열에 항목 추가 (`id`, `category`, `path`, `ready`, `*Key` 지정)
+2. `frontend/src/locales/ko.json`의 `tools.<id>`에 `name` / `desc` / `icon` 문구 추가
+3. 실제 페이지가 필요하면 `frontend/src/pages/`에 컴포넌트를 만들고 `frontend/src/App.jsx`에 라우트 등록
 4. 페이지 내부의 모든 문구도 **규칙 1**에 따라 `ko.json`에 추가
 
 `ready: false`이면 홈에서 "준비 중" 배지로 표시되고 클릭이 비활성화된다.
@@ -81,7 +81,7 @@ function Example() {
 
 ## 🌐 다국어(언어 추가)
 
-새 언어는 `src/locales/`에 `<lang>.json`을 추가하고 `src/i18n.js`의 `resources`에 등록한다.
+새 언어는 `frontend/src/locales/`에 `<lang>.json`을 추가하고 `frontend/src/i18n.js`의 `resources`에 등록한다.
 `ko.json`의 키 구조를 그대로 복제해 값만 번역하면 된다. (문구가 한 곳에 모여 있어 번역이 쉽다.)
 
 ---

@@ -1,10 +1,40 @@
 services:
-  web:
+  backend:
     build:
-      context: .
+      context: ./backend
       dockerfile: Dockerfile
-    image: rfg-web
-    container_name: rfg-web
+    image: rfg-backend
+    container_name: rfg_backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.production
+    volumes:
+      - static_data:/app/staticfiles
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: rfg-frontend
+    container_name: rfg_frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: rfg_nginx
+    restart: unless-stopped
     ports:
       - "8080:80"
-    restart: unless-stopped
+    depends_on:
+      - backend
+      - frontend
+
+volumes:
+  static_data:
+    driver: local

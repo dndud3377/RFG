@@ -14,7 +14,7 @@ RUN npm run build
 FROM nginx:1.27-alpine AS runtime
 
 # SPA 라우팅용 nginx 설정
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx-frontend.conf /etc/nginx/conf.d/default.conf
 
 # 빌드 산출물 배치
 COPY --from=build /app/dist /usr/share/nginx/html

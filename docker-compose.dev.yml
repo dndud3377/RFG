@@ -21,6 +21,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        VITE_AUTH_MODE: dev
     image: rfg-frontend-dev
     container_name: rfg_frontend_dev
     restart: unless-stopped

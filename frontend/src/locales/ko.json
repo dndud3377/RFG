@@ -6,7 +6,24 @@
   "nav": {
     "home": "홈",
     "tools": "도구",
-    "help": "도움말"
+    "help": "도움말",
+    "login": "로그인",
+    "logout": "로그아웃",
+    "greeting": "{{name}}님"
+  },
+  "login": {
+    "title": "로그인",
+    "subtitle": "사내 계정으로 로그인하면\n모든 도구를 이용할 수 있습니다.",
+    "btn": "사내 계정으로 로그인",
+    "logging_in": "로그인 중...",
+    "hint": "로그인 후에도 계속 이용하실 수 있습니다.",
+    "dev_placeholder": "로그인 ID 입력 (개발용)",
+    "dev_btn": "개발용으로 로그인",
+    "error_sso": "로그인 중 오류가 발생했습니다.",
+    "error_no_id_token": "인증 토큰을 받지 못했습니다.",
+    "error_processing": "로그인 처리 중 오류가 발생했습니다.",
+    "processing": "로그인 처리 중입니다...",
+    "back_to_main": "메인으로 돌아가기"
   },
   "home": {
     "hero": {

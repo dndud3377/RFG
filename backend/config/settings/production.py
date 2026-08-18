@@ -13,3 +13,6 @@ DATABASES = {
 }
 
 SECURE_SSL_REDIRECT = True
+
+# 운영은 항상 ADFS SSO 로그인(request-site 와 동일 계정)을 쓴다.
+AUTH_MODE = os.environ.get("AUTH_MODE", "sso")

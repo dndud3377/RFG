@@ -8,6 +8,10 @@ RUN npm install
 
 # 소스 복사 후 프로덕션 빌드
 COPY . .
+
+# AUTH_MODE=sso(운영, 기본값) / dev(로컬 개발) — Vite가 빌드 시점에 주입한다.
+ARG VITE_AUTH_MODE=sso
+ENV VITE_AUTH_MODE=$VITE_AUTH_MODE
 RUN npm run build
 
 # ---------- 2단계: 서빙 (nginx) ----------

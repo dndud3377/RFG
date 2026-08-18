@@ -23,6 +23,8 @@ pnpm-debug.log*
 # backend
 backend/db.sqlite3
 backend/staticfiles
+backend/api/certs/*.cer
+backend/api/certs/*.pem
 __pycache__
 *.pyc
 

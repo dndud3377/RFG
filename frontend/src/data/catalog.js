@@ -6,7 +6,7 @@ export const tools = [
   {
     id: 'ebeam',
     path: '/tools/ebeam',
-    ready: false,
+    ready: true,
     iconKey: 'tools.ebeam.icon',
     nameKey: 'tools.ebeam.name',
     descKey: 'tools.ebeam.desc',

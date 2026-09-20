@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx'
 import ComingSoon from './pages/ComingSoon.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import OIDCCallbackPage from './pages/OIDCCallbackPage.jsx'
+import EbeamReview from './pages/EbeamReview.jsx'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/oidc-callback" element={<OIDCCallbackPage />} />
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/login" element={<Layout><LoginPage /></Layout>} />
+        <Route path="/tools/ebeam" element={<Layout><EbeamReview /></Layout>} />
         {/* 아직 준비 중인 도구들 */}
         <Route path="/tools/:toolId" element={<Layout><ComingSoon /></Layout>} />
         <Route path="*" element={<Layout><Home /></Layout>} />
